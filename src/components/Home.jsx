@@ -18,16 +18,16 @@ const Home = () => {
   }, [index, texts]);
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden ">
-    
-      <div className="absolute inset-0">
+    <div className="relative h-screen w-screen overflow-hidden">
+      {/* Full-page background */}
+      <div className="absolute top-0 left-0 w-screen h-screen">
         <svg
           className="w-full h-full"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200  800"
+          viewBox="0 0 1200 800"
+          preserveAspectRatio="none" // Ensures scaling to fill the screen
           fill="none"
         >
-          
           {[...Array(20)].map((_, i) => (
             <circle
               key={i}
@@ -37,7 +37,6 @@ const Home = () => {
               fill="#d62727"
             />
           ))}
-      
           {[...Array(30)].map((_, i) => (
             <line
               key={i}
@@ -53,6 +52,7 @@ const Home = () => {
         </svg>
       </div>
 
+      {/* Foreground content */}
       <div className="relative flex items-center h-screen justify-center -mt-24">
         <div className="flex flex-col text-center">
           <p className="font-poppins text-4xl sm:text-6xl font-extrabold text-[#d62727]">
@@ -60,7 +60,10 @@ const Home = () => {
           </p>
 
           <div className="flex gap-8 justify-center mt-4">
-            <Link to='/blogs' className="bg-black w-36 text-xl px-6 py-2 text-white font-poppins rounded-3xl">
+            <Link
+              to="/blogs"
+              className="bg-black w-36 text-xl px-6 py-2 text-white font-poppins rounded-3xl"
+            >
               Blogs
             </Link>
             <button className="bg-black w-36 text-xl px-6 py-2 text-[#d62727] font-bold font-poppins rounded-3xl">

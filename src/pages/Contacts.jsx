@@ -13,8 +13,8 @@ const Contacts = () => {
         <p>I'm crafting designs with code.</p>
       </div>
 
-      <div className="flex font-poppins items-center justify-center gap-6">
-        <div className="flex flex-col w-1/2">
+      <div className="flex flex-col-reverse sm:flex-row font-poppins items-center justify-center gap-6">
+        <div className="flex flex-col w-full sm:w-1/2">
           <p className="font-poppins">
             My projects, often expressed through mesmerizing animations, powered
             by code and algorithms, seek to visually interpret and question the
@@ -26,7 +26,7 @@ const Contacts = () => {
           <hr className=" border-black border-1" />
         </div>
 
-        <div className="w-1/2">
+        <div className=" w-full sm:w-1/2">
           <img
             className="rounded-full w-80 h-80 object-cover"
             src="/my_photoblack.jpg"
@@ -35,8 +35,8 @@ const Contacts = () => {
         </div>
       </div>
 
-      <div className="w-1/2">
-        <p>
+      <div className="w-full sm:w-1/2">
+        <p className="font-poppins text-justify">
           Before delving into the digital world, I pursued an academic path
           deeply rooted in understanding human behavior and cognition. I earned
           a Bachelor’s degree in Psychology, followed by a Master’s degree in
@@ -84,7 +84,7 @@ const Contacts = () => {
         </p>
       </div>
 
-      <div className="w-1/2 mt-24 font-poppins">
+      <div className="w-full sm:w-1/2 mt-24 font-poppins">
         <h1 className="text-3xl font-poppins">Behind the Code</h1>
         <p className="font-poppins font-normal text-xl my-6">
           Explore My Branding and Professional Web Design Work
