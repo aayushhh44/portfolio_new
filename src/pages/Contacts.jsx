@@ -15,7 +15,7 @@ const Contacts = () => {
 
       <div className="flex flex-col-reverse sm:flex-row font-poppins items-center justify-center gap-6">
         <div className="flex flex-col w-full sm:w-1/2">
-        <p className="font-poppins">
+        <p className="font-poppins font-bold">
   My tech stacks are: <span className="text-[#d62727] font-bold font-poppins">JavaScript, TypeScript, React.js, Node.js, MongoDB, PostgreSQL, MySQL, Docker, Python, Solidity, Rust, Express.js, Tailwind CSS, Redux, Next.js, Git, Web3.js, Firebase.</span>
 </p>
 

@@ -105,47 +105,53 @@ const Navbar = () => {
 
         <Hamburger isOpen={isOpen} setIsOpen={setIsOpen} />
 
-        {isOpen && (
-          <div className="font-source-code mt-5 flex flex-col gap-4 items-center justify-center w-full h-screen  top-0 left-0 sm:hidden gap-y-6 bg-white z-50">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `hover:text-[#d62727] text-3xl text-center hover:cursor-pointer ${
-                  isActive ? "text-[#d62727]" : ""
-                }`
-              }
-              onClick={() => setIsOpen(false)}
-            >
-              HOME
-            </NavLink>
-            <Link
-              to="/blogs"
-              className="text-3xl text-center hover:text-[#d62727] hover:cursor-pointer active:text-[#d62727]"
-              onClick={() => setIsOpen(false)}
-            >
-              BLOGS
-            </Link>
-            <NavLink
-              to="/gallery"
-              className="text-3xl text-center hover:text-[#d62727] hover:cursor-pointer"
-              onClick={() => setIsOpen(false)}
-            >
-              GALLERY
-            </NavLink>
-            <NavLink
-              to="/contacts"
-              className={({ isActive }) =>
-                `text-3xl hover:text-[#d62727] text-center hover:cursor-pointer ${
-                  isActive ? "text-[#d62727]" : ""
-                }`
-              }
-              onClick={() => setIsOpen(false)}
-            >
-              ABOUT & CONTACTS
-            </NavLink>
-          </div>
-        )}
+   
+      
       </div>
+      <div
+          className={`${
+            isOpen
+              ? "transform relative translate-x-0 opacity-100 visibility-visible transition-all duration-300"
+              : "transform -translate-x-full opacity-0 visibility-hidden transition-all duration-300"
+          } font-source-code mt-5 flex flex-col gap-4 items-center justify-center  h-screen -top-8 left-0 sm:hidden w-3/4 gap-y-6 text-white bg-black z-50 absolute`}
+        >
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              `hover:text-[#d62727] text-2xl text-center hover:cursor-pointer ${
+                isActive ? "text-[#d62727]" : ""
+              }`
+            }
+            onClick={() => setIsOpen(false)}
+          >
+            HOME
+          </NavLink>
+          <Link
+            to="/blogs"
+            className="text-2xl text-center hover:text-[#d62727] hover:cursor-pointer active:text-[#d62727]"
+            onClick={() => setIsOpen(false)}
+          >
+            BLOGS
+          </Link>
+          <NavLink
+            to="/gallery"
+            className="text-2xl text-center hover:text-[#d62727] hover:cursor-pointer"
+            onClick={() => setIsOpen(false)}
+          >
+            GALLERY
+          </NavLink>
+          <NavLink
+            to="/contacts"
+            className={({ isActive }) =>
+              `text-2xl hover:text-[#d62727] text-center hover:cursor-pointer ${
+                isActive ? "text-[#d62727]" : ""
+              }`
+            }
+            onClick={() => setIsOpen(false)}
+          >
+            ABOUT & CONTACTS
+          </NavLink>
+        </div>
     </div>
   );
 };
