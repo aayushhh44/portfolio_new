@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const texts = ['AAYUSH POUDEL', 'BLOCKCHAIN ENTHUSIAST', 'LEARNER', 'BELIEVER!'];
@@ -18,7 +19,7 @@ const Home = () => {
 
   return (
     <div className="relative h-screen w-screen overflow-hidden ">
-      {/* Blockchain graph as background */}
+    
       <div className="absolute inset-0">
         <svg
           className="w-full h-full"
@@ -26,7 +27,7 @@ const Home = () => {
           viewBox="0 0 1200  800"
           fill="none"
         >
-          {/* Example nodes */}
+          
           {[...Array(20)].map((_, i) => (
             <circle
               key={i}
@@ -36,7 +37,7 @@ const Home = () => {
               fill="#d62727"
             />
           ))}
-          {/* Example lines */}
+      
           {[...Array(30)].map((_, i) => (
             <line
               key={i}
@@ -52,17 +53,16 @@ const Home = () => {
         </svg>
       </div>
 
-      {/* Main Content */}
       <div className="relative flex items-center h-screen justify-center -mt-24">
         <div className="flex flex-col text-center">
-          <p className="font-poppins text-6xl font-extrabold text-[#d62727]">
+          <p className="font-poppins text-4xl sm:text-6xl font-extrabold text-[#d62727]">
             {currentText}
           </p>
 
           <div className="flex gap-8 justify-center mt-4">
-            <button className="bg-black w-36 text-xl px-6 py-2 text-white font-poppins rounded-3xl">
+            <Link to='/blogs' className="bg-black w-36 text-xl px-6 py-2 text-white font-poppins rounded-3xl">
               Blogs
-            </button>
+            </Link>
             <button className="bg-black w-36 text-xl px-6 py-2 text-[#d62727] font-bold font-poppins rounded-3xl">
               Projects
             </button>
