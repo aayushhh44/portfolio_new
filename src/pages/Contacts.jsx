@@ -10,16 +10,15 @@ const Contacts = () => {
 
       <div className="font-poppins mt-20">
         <p className="text-3xl">I am Aayush Poudel</p>
-        <p>I'm crafting designs with code.</p>
+        <p>I love creating functional websites.</p>
       </div>
 
       <div className="flex flex-col-reverse sm:flex-row font-poppins items-center justify-center gap-6">
         <div className="flex flex-col w-full sm:w-1/2">
-          <p className="font-poppins">
-            My projects, often expressed through mesmerizing animations, powered
-            by code and algorithms, seek to visually interpret and question the
-            fluid nature and existential implications of time.
-          </p>
+        <p className="font-poppins">
+  My tech stacks are: <span className="text-[#d62727] font-bold font-poppins">JavaScript, TypeScript, React.js, Node.js, MongoDB, PostgreSQL, MySQL, Docker, Python, Solidity, Rust, Express.js, Tailwind CSS, Redux, Next.js, Git, Web3.js, Firebase.</span>
+</p>
+
           <p className="font-semibold font-poppins text-xl my-6">Bio</p>
 
           <p>From Biology to Computer Science</p>
@@ -37,73 +36,92 @@ const Contacts = () => {
 
       <div className="w-full sm:w-1/2">
         <p className="font-poppins text-justify">
-          Before delving into the digital world, I pursued an academic path
-          deeply rooted in understanding human behavior and cognition. I earned
-          a Bachelor’s degree in Psychology, followed by a Master’s degree in
-          Cognitive Sciences, where I explored the intersection of the mind and
-          technology. This foundation has profoundly influenced my approach to
-          generative art and design, providing me with a unique perspective on
-          creativity. It has also deepened my understanding of how artificial
-          intelligence operates today.
+          Before starting with computer science and programming,
+          <span className="text-[#d62727] font-bold">
+            {" "}
+            I studied taking biology as my major till grade 12th
+          </span>
+          . I enjoyed studying biology and had dreams of becoming a doctor. This
+          was also because my parents encouraged me, as I was a good student
+          from the beginning.
+          <br />
+          Over time, I realized I was more interested in technology. I decided
+          to switch to computer science, and started exploring new tools and
+          technologies to create new things. I now enjoy learning about web
+          development, blockchain, and other technologies. My journey has
+          changed, but my passion for learning and creating will continue.
         </p>
 
-        <p className="my-6">
-          I began my journey as a web designer in 1999, finding creative
-          fulfillment later with ActionScript, where I developed unique and
-          interactive websites that pushed the boundaries of digital design.
+        <p className="my-6 font-poppins">
+          I began working as a frontend developer in{" "}
+          <span className="text-[#d62727] font-bold">February 2024</span>. Over
+          time, I’ve not only improved my frontend skills but also tried out
+          different technologies to expand my knowledge.
         </p>
 
-        <p className="mt-16">From 1999 to 2008...</p>
+        <p className="mt-16 font-poppins">Before Lockdown</p>
         <hr className=" border-black border-1" />
 
-        <p className="my-6">
-          ...I worked as a webmaster for various companies, including Casino
-          Entreprises. Transitioning to freelance work, I collaborated with
-          clients such as CLEAR CHANNEL, MICHELIN and EURO RSCG, creating
-          tailored website designs and digital solutions until 2012.
+        <p className="my-6 font-poppins">
+          Back in 9th and 10th grade, I hadn’t explored anything in tech. Most
+          of my time was spent playing video games and outdoor games. My routine
+          was simple:{" "}
+          <span className="font-bold">
+            going to school, studying, and coming back home
+          </span>
+          .
         </p>
 
-        <p className="mt-16">From 1999 to 2008...</p>
+        <p className="mt-16 font-poppins">During Lockdown</p>
         <hr className=" border-black border-1" />
 
-        <p className="my-6">
-          ...I worked as a webmaster for various companies, including Casino
-          Entreprises. Transitioning to freelance work, I collaborated with
-          clients such as CLEAR CHANNEL, MICHELIN and EURO RSCG, creating
-          tailored website designs and digital solutions until 2012.
+        <p className="my-6 font-poppins">
+          During the lockdown, I spent most of my time playing video games while
+          attending online classes. Haha, it wasn’t just me, we whole classmates
+          used to do that. I did read some medical books, but I wasn’t really
+          focused on programming. Looking back, the things I regret not doing
+          during that time are not learning how to play the guitar and
+          programming.
         </p>
 
-        <p className="mt-16">And Now</p>
+        <p className="mt-16 font-poppins">After Lockdown</p>
         <hr className=" border-black border-1" />
 
-        <p className="my-6">
-          Im working as a webmaster for various companies, including Casino
-          Entreprises. Transitioning to freelance work, I collaborated with
-          clients such as CLEAR CHANNEL, MICHELIN and EURO RSCG, creating
-          tailored website designs and digital solutions until 2012.
+        <p className="my-6 font-poppins">
+          After the lockdown, I attended various seminars and events, where I
+          had the chance to network with different people. It was also when I
+          started learning programming, beginning with C and Java, and gradually
+          moving into web development.
+        </p>
+
+        <p className="mt-16 font-poppins">Now</p>
+        <hr className=" border-black border-1" />
+
+        <p className="my-6 font-poppins">
+          I’m currently working as a full stack web developer, and I’m always
+          learning new technologies. I'm fascinated by{" "}
+          <span className="text-[#d62727] font-bold">blockchain and web3</span>,
+          so I’ve started exploring and learning them, and I’m also actively
+          involved in various communities.
         </p>
       </div>
 
       <div className="w-full sm:w-1/2 mt-24 font-poppins">
         <h1 className="text-3xl font-poppins">Behind the Code</h1>
         <p className="font-poppins font-normal text-xl my-6">
-          Explore My Branding and Professional Web Design Work
+          I love to explore new things
         </p>
-        <p>
-          In addition to generative art, I specialize for more than 25 years in
-          brand graphic design and professional website creation. My approach
-          combines a strong visual identity with effective design principles to
-          bring brands to life and create memorable online experiences. To see
-          my latest branding and web design projects, visit my Linkedin
-          portfolio:
+        <p className="font-poppins">
+          Whether it’s exploring new technologies or discovering new places, I’m
+          always curious. I love to travel. To learn new things.
         </p>
-        <a className="text-[#d62727] font-bold" href="">
+        <a className="text-[#d62727] font-poppins font-bold" href="">
           View my Linkedin Profile
         </a>
         .
         <br />
         <div className="mt-12">
-          <a className="text-[#d62727] font-bold " href="">
+          <a className="text-[#d62727] font-poppins font-bold " href="">
             📄Download my Resume
           </a>
           .

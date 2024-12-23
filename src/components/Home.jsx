@@ -1,78 +1,95 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
+import { FaRegCalendarAlt } from "react-icons/fa";
+import { FaArrowRightLong } from "react-icons/fa6";
+
 
 const Home = () => {
-  const texts = ['AAYUSH POUDEL', 'BLOCKCHAIN ENTHUSIAST', 'LEARNER', 'BELIEVER!'];
-  const [currentText, setCurrentText] = useState(texts[0]); // Initialize with the first text
-  const [index, setIndex] = useState(0); // State for tracking the index
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prevIndex) => (prevIndex + 1) % texts.length); // Increment index and loop back
-    }, 400); // Faster transition (300ms)
-    return () => clearInterval(interval); // Cleanup interval on unmount
-  }, [texts]);
-
-  useEffect(() => {
-    setCurrentText(texts[index]); // Update the displayed text when index changes
-  }, [index, texts]);
-
+  
   return (
-    <div className="relative h-screen w-screen overflow-hidden">
-      {/* Full-page background */}
-      <div className="absolute top-0 left-0 w-screen h-screen">
-        <svg
-          className="w-full h-full"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 800"
-          preserveAspectRatio="none" // Ensures scaling to fill the screen
-          fill="none"
-        >
-          {[...Array(20)].map((_, i) => (
-            <circle
-              key={i}
-              cx={Math.random() * 1200}
-              cy={Math.random() * 800}
-              r={Math.random() * 5 + 3}
-              fill="#d62727"
-            />
-          ))}
-          {[...Array(30)].map((_, i) => (
-            <line
-              key={i}
-              x1={Math.random() * 1200}
-              y1={Math.random() * 800}
-              x2={Math.random() * 1200}
-              y2={Math.random() * 800}
-              stroke="#d62727"
-              strokeWidth="1"
-              strokeOpacity="0.7"
-            />
-          ))}
-        </svg>
+    <div className="p-8">
+
+
+    <div className="">
+      <div>
+        <p className="text-3xl mb-4">Home</p>
+        <p className="font-source-code italic mb-4">
+          Recent Posts
+        </p>
       </div>
 
-      {/* Foreground content */}
-      <div className="relative flex items-center h-screen justify-center -mt-24">
-        <div className="flex flex-col text-center">
-          <p className="font-poppins text-4xl sm:text-6xl font-extrabold text-[#d62727]">
-            {currentText}
-          </p>
+      <div className="w-2/3 flex flex-col gap-6">
 
-          <div className="flex gap-8 justify-center mt-4">
-            <Link
-              to="/blogs"
-              className="bg-black w-36 text-xl px-6 py-2 text-white font-poppins rounded-3xl"
-            >
-              Blogs
-            </Link>
-            <button className="bg-black w-36 text-xl px-6 py-2 text-[#d62727] font-bold font-poppins rounded-3xl">
-              Projects
-            </button>
-          </div>
+      <div className="hover:cursor-pointer">
+        <p className="text-[#d62727] font-poppins hover:underline underline-offset-2">
+          AWS Student Community Day Nepal CTF Writeup
+        </p>
+        <div className="flex items-center font-source-code italic gap-2">
+          <FaRegCalendarAlt />
+          <p className="font-poppins text-gray-500">Oct 5, 2024 | 12:00 AM</p>
         </div>
+        <p className="font-poppins text-justify">
+          Explore the highlights and insights from AWS Student Community Day
+          Nepal's Capture The Flag (CTF) competition, focusing on AWS-centric
+          challenges and cloud security strategies
+        </p>
+      </div>
+
+      <div className="hover:cursor-pointer">
+        <Link to='/blog-page' className="text-[#d62727] font-poppins hover:underline underline-offset-2">
+          AWS Student Community Day Nepal CTF Writeup
+        </Link>
+        <div className="flex items-center font-source-code italic gap-2">
+          <FaRegCalendarAlt />
+          <p className="font-poppins text-gray-500">Oct 5, 2024 | 12:00 AM</p>
+        </div>
+        <p className="font-poppins text-justify">
+          Explore the highlights and insights from AWS Student Community Day
+          Nepal's Capture The Flag (CTF) competition, focusing on AWS-centric
+          challenges and cloud security strategies
+        </p>
+      </div>
+
+
+      <div className="hover:cursor-pointer">
+        <p className="text-[#d62727] font-poppins hover:underline underline-offset-2">
+          AWS Student Community Day Nepal CTF Writeup
+        </p>
+        <div className="flex items-center font-source-code italic gap-2">
+          <FaRegCalendarAlt />
+          <p className="font-poppins text-gray-500">Oct 5, 2024 | 12:00 AM</p>
+        </div>
+        <p className="font-poppins text-justify">
+          Explore the highlights and insights from AWS Student Community Day
+          Nepal's Capture The Flag (CTF) competition, focusing on AWS-centric
+          challenges and cloud security strategies
+        </p>
+      </div>
+
+
+
+      <div className="hover:cursor-pointer">
+        <p className="text-[#d62727] font-poppins hover:underline underline-offset-2">
+          AWS Student Community Day Nepal CTF Writeup
+        </p>
+        <div className="flex items-center font-source-code italic gap-2">
+          <FaRegCalendarAlt />
+          <p className="font-poppins text-gray-500">Oct 5, 2024 | 12:00 AM</p>
+        </div>
+        <p className="font-poppins text-justify">
+          Explore the highlights and insights from AWS Student Community Day
+          Nepal's Capture The Flag (CTF) competition, focusing on AWS-centric
+          challenges and cloud security strategies
+        </p>
+      </div>
       </div>
     </div>
+
+      <div className="flex items-center gap-2 mt-4 cursor-pointer font-bold">
+    <h2>View All Posts</h2>
+    <FaArrowRightLong className="font-bold" />
+    </div>
+  </div>
   );
 };
 
